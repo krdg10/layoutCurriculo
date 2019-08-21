@@ -187,6 +187,10 @@
                         <label for="inputCpf">CPF:</label> 
                         <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="11">
                     </div>
+                    <div class="form-group">
+                        <label for="inputCep">CEP:</label> 
+                        <input type="text" class="form-control" id="cep" name="cep" placeholder="00000-000" maxlength="9">
+                    </div>
 
                     <div class="form-group">
                         <label for="inputEmail">Email:</label> <input type="email" class="form-control" id="email" name = "email" placeholder="exemplo@outlook.com" ng-model="cadastroEmail" required="autofocus">
@@ -196,6 +200,10 @@
                         <label for="inputTel" >Telefone:</label> <input class="form-control" id="telefone" name = "telefone" maxlength="13" placeholder=" (00) 00000-0000" OnKeyPress="formatar('##-#####-####', this)" required="autofocus">
                     </div>
 
+                    <div class="form-group">
+                        <label for="inputCargo">Cargo Desejado:</label> 
+                        <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Ex: Analista de Sistemas">
+                    </div>
                     <div class="form-group">
                         <label for="inputSenha">Senha:</label> 
                         <input type="password" class="form-control" id="inputSenha" name="senha" placeholder="Senha" ng-model="cadastroSenha" required="autofocus">
