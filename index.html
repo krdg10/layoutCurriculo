@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Emprego Du Bom</title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  
+  <!-- Custom styles for this template -->
+  <link href="scss/intro.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">Banco de Cúrriculos</a>
+  </nav>
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link "><i class="far fa-lightbulb"></i>Sobre</a>
+      </li>
+    </ul>
+</nav>
+<!--end Navigation -->
+  
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in" >Bem Vindo ao Banco de Cúrriculos</div>
+        <div class="intro-heading text-uppercase">Prazer em Recebê-lo</div>
+        <a class="btn btn-primary btn-lg text-uppercase " href="#services"  data-toggle="modal" data-target="#tunder">Venha Conosco</a>
+      </div>
+    </div>
+  </header>
+<footer></footer>
+
+<!-- Modal -->
+
+<div class="modal fade" id="tunder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" >Como você se identifica?</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+        
+      </div>
+      <div class="modal-body">
+        <!-- body -->
+        <div class="modal-header">
+            <div class="form-group">
+               <div class="row">
+                    <div class="column">
+                        <img src="img/fisica.png" alt="Snow" style="width:100%">
+                        <center><a class="btn btn-primary btn-md text-uppercase " href="#fisica"  data-toggle="modal" data-target="#fisica">Pessoa Física</a>
+                    </div>
+                <div class="column">
+                    <img src="img/juridica.png" alt="Forest" style="width:100%">
+                    <center><a class="btn btn-primary btn-md text-uppercase " href="#juridica"  data-toggle="modal" data-target="#juridica">Empresa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  end-Modal1 -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="fisica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">          
+          <h3 class="modal-title" id="exampleModalLabel" >Pessoa Física </h3>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+        
+      </div>
+      <div class="modal-body">
+        <!-- body -->
+        <div class="modal-header">
+            <div class="form-group">
+            <h5 class="modal-title" id="exampleModalLabel" >Login</h5>
+            <br>
+                <div class="input-group margin-bottom-sm">
+                  <span class="input-group-addon"><i class="fas fa-envelope fa-fw"></i></span>
+                  <input class="form-control" type="text" name = "email" placeholder="Email" ><!--required autofocus-->
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                  <input class="form-control" type="password" name = "senha" placeholder="Senha"><!--required autofocus-->
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="modal-footer">
+           <a href="areausuario.html"><input class="btn btn-success btn-lg  btn-block " type="submit" value="Entrar" class="btn"></a>
+        </div> 
+        </form>
+
+        <div class="modal-footer">
+            <a href="#"> Não tem uma conta ainda?</a>
+            <input class="btn btn-info btn-lg  btn-block " type="submit" value=" Crie sua Conta" class="btn" data-toggle="modal" data-target="#cadas1">
+        </div>  
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end Modal -->
+<!-- Modal -->
+<div class="modal fade" id="juridica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel" >Empresa</h3>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+        
+      </div>
+      <div class="modal-body">
+        <!-- body -->
+        <div class="modal-header">
+          
+            <div class="form-group">
+                <h5 class="modal-title" id="exampleModalLabel" >Login</h5>
+                <br>
+                <div class="input-group margin-bottom-sm">
+                  <span class="input-group-addon"><i class="fas fa-file-signature"></i></span>
+                  <input class="form-control" type="text" name = "CNPJ" placeholder="cnpj" ><!--required autofocus-->
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                  <input class="form-control" type="password" name = "senha" placeholder="Senha" ><!--required autofocus-->
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="modal-footer">
+           <a href="areaempre.html"><input class="btn btn-success btn-lg  btn-block " type="submit" value="Entrar" class="btn"></a>
+        </div> 
+        </form>
+
+        <div class="modal-footer">
+            <a href="#"> Não tem uma conta ainda?</a>
+            <input class="btn btn-info btn-lg  btn-block " type="submit" value=" Crie sua Conta" class="btn" data-toggle="modal" data-target="#cadas2">
+        </div>  
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--  end-Modal -->
+
+
+<!-- Modal -->
+
+  <div class="modal fade" id="cadas1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" >Cadastre-se</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+            </div>
+            <!-- body -->
+            <div class="modal-body">
+                <form method="POST" action="/cadastro">
+                
+                    <div class="form-group">
+                        <label for="inputName">Nome:</label> 
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo" ng-model="cadastroNome" required="autofocus">  
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputCpf">CPF:</label> 
+                        <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="11">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputCep">CEP:</label> 
+                        <input type="text" class="form-control" id="cep" name="cep" placeholder="00000-000" maxlength="9">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail">Email:</label> <input type="email" class="form-control" id="email" name = "email" placeholder="exemplo@outlook.com" ng-model="cadastroEmail" required="autofocus">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputTel" >Telefone:</label> <input class="form-control" id="telefone" name = "telefone" maxlength="13" placeholder=" (00) 00000-0000" OnKeyPress="formatar('##-#####-####', this)" required="autofocus">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputCargo">Cargo Desejado:</label> 
+                        <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Ex: Analista de Sistemas">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSenha">Senha:</label> 
+                        <input type="password" class="form-control" id="inputSenha" name="senha" placeholder="Senha" ng-model="cadastroSenha" required="autofocus">
+                    </div>
+
+                    <div class="modal-footer">
+                          <button type="submit" id="btnCadastrar" class="btn btn-success btn-block" data-loading-text="Cadastrando...">Criar Cadastro</button>
+                     </div>
+                </form>
+            </div>
+
+            <!-- footer -->
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-block" class="close" data-dismiss="modal" aria-label="Close" > Cancelar</button>
+            </div>
+            <!-- end footer -->
+        </div>
+    </div>
+</div>
+<!--  end-Modal -->
+<div class="modal fade" id="cadas2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" >Cadastro da Empresa</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+            </div>
+            <!-- body -->
+            <div class="modal-body">
+                <form method="POST" action="/cadastro">
+                
+                    <div class="form-group">
+                        <label for="inputCnpj">CNPJ:</label> 
+                        <input type="text" class="form-control" maxlength="15" id="cnpj" name="nome" placeholder=" XX.XXX.XXX/XXXX-XX" ng-model="cadastroNome" required="autofocus">  
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputNome">Nome da Empresa:</label> 
+                        <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Bhrama" maxlength="11">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputCep">Cep:</label> <input type="cepl" class="form-control" id="email" name = "email" placeholder="XXXXX-XXX" ng-model="cadastroCep" required="autofocus">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEndereco">Endereço:</label> <input type="endereco" class="form-control" id="endereco" name = "endereço" placeholder="Rua **** " ng-model="cadastroCep" required="autofocus">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputNumero">Número:</label> <input type="numero" class="form-control" id="num" name = "nam" placeholder="0000" ng-model="cadastroNum" required="autofocus">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputComple">Complemento:</label> <input type="compl" class="form-control" id="comp" name = "comp" placeholder="Entre as Ruas tal e a Rua tal" ng-model="cadastroCompl" required="autofocus">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputBairro">Bairro:</label> <input type="bairro" class="form-control" id="bairro" name = "bairro" placeholder="*******" ng-model="cadastroBai" required="autofocus">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEsta">Estado:</label> <input type="Esta" class="form-control" id="esta" name = "esta" placeholder="Mato Grosso do Sul" ng-model="cadastroEsta" required="autofocus">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputCidad">Cidade:</label> <input type="Cidad" class="form-control" id="cid" name = "cid" placeholder="Corumbá" ng-model="cadastroCid" required="autofocus">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputRempre">Ramo da Empresa:</label> <input type="text" class="form-control" id="Remp" name = "raEm" placeholder="Industrial" ng-model="cadastroRempre" required="autofocus">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputTel" >Telefone da Empresa:</label> <input class="form-control" id="telefone" name = "telefone" maxlength="13" placeholder=" (00) 00000-0000" OnKeyPress="formatar('##-#####-####', this)" required="autofocus">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSite">Site da Empresa:</label> <input type="link" class="form-control" id="Link" name = "url" placeholder="www.Uol.com.br" ng-model="cadastroSite" required="autofocus">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputLinkedin">Url Linkdin:</label> <input type="linkdin" class="form-control" id="Link" name = "url" placeholder="acmaeaewww.dmosewm/dmsodmf" ng-model="cadastroLinkdin" required="autofocus">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputSenha">Senha:</label> 
+                        <input type="password" class="form-control" id="inputSenha" name="senha" placeholder="Senha" ng-model="cadastroSenha" required="autofocus">
+                    </div>
+
+                    <div class="modal-footer">
+                          <button type="submit" id="btnCadastrar" class="btn btn-success btn-block" data-loading-text="Cadastrando...">Criar Cadastro</button>
+                     </div>
+                </form>
+            </div>
+
+            <!-- footer -->
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-block" class="close" data-dismiss="modal" aria-label="Close" > Cancelar</button>
+            </div>
+            <!-- end footer -->
+        </div>
+    </div>
+</div>
+
+
+<!--  end-Modal -->
+
+<!--  script que realiza o formato tanto do cpf-telefone -->
+<script>
+function formatar(mascara, documento){
+  var i = documento.value.length;
+  var saida = mascara.substring(0,1);
+  var texto = mascara.substring(i)
+  
+  if (texto.substring(0,1) != saida){
+            documento.value += texto.substring(0,1);
+  }  
+}
+$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Botão que acionou o modal
+})
+
+</script>
+<!--   fim do script  -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
+
+</body>
+
+</html>
