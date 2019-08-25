@@ -97,17 +97,17 @@
             <br>
                 <div class="input-group margin-bottom-sm">
                   <span class="input-group-text"><i class="fas fa-envelope fa-fw"></i></span>
-                  <input class="form-control" type="text" name = "email" placeholder="Email" ><!--required autofocus-->
+                  <input class="form-control" type="text" name = "email" placeholder="Email" required = "autofocus"><!--required autofocus-->
                 </div>
                 <div class="input-group">
                   <span class="input-group-text"><i class="fa fa-key fa-fw"></i></span>
-                  <input class="form-control" type="password" name = "senha" placeholder="Senha"><!--required autofocus-->
+                  <input class="form-control" type="password" name = "senha" placeholder="Senha" required = "autofocus"><!--required autofocus-->
                 </div>
             </div>
         </div>
         <!-- footer -->
         <div class="modal-footer">
-           <a href="areausuario.html"><input class="btn btn-success btn-lg  btn-block " type="submit" value="Entrar" class="btn"></a>
+           <a href="pessoaSemCadastro.html"><input class="btn btn-success btn-lg  btn-block " type="submit" value="Entrar" class="btn"></a>
         </div> 
         </form>
 
@@ -192,31 +192,10 @@
                     </div>
                     <br>
                     <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="">CEP:</span>
-                      </div>
-                        <input type="text" class="form-control" id="cep" name="cep" placeholder="00000-000" maxlength="9">
-                    </div>
-                    <br>
-                    <div class="input-group">
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="">Email:</span>
                         </div>
                         <input type="email" class="form-control" id="email" name = "email" placeholder="exemplo@outlook.com" ng-model="cadastroEmail" required="autofocus">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">Telefone:</span>
-                        </div>
-                        <input class="form-control" id="telefone" name = "telefone" maxlength="13" placeholder=" (00) 00000-0000" OnKeyPress="formatar('##-#####-####', this)" required="autofocus">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">Cargo Desejado:</span>
-                        </div>
-                        <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Ex: Analista de Sistemas">
                     </div>
                     <br>
                     <div class="input-group">
