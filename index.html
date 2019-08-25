@@ -68,7 +68,7 @@
                     </div>
                     <div class="col-lg-6 text-center" >
                         <i class="fas fa-building fa-5x login-icon"></i>
-                        <a class="btn btn-primary btn-xs text-uppercase inferno " href="#juridica"  data-toggle="modal" data-target="#juridica">Pessoa Jurídica</a>
+                        <a class="btn btn-primary btn-md text-uppercase inferno " href="#juridica"  data-toggle="modal" data-target="#juridica">Pessoa Jurídica</a>
                     </div>
                 </div>
             </div>
@@ -95,6 +95,8 @@
             <div class="form-group">
             <h5 class="modal-title" id="exampleModalLabel" >Login</h5>
             <br>
+            <div class="row">
+              <div class="col-lg-9">
                 <div class="form-group input-group margin-bottom-sm">
                   <span class="input-group-text"><i class="fas fa-envelope fa-fw"></i></span>
                   <input class="form-control" type="text" name = "email" placeholder="Email" required = "autofocus"><!--required autofocus-->
@@ -103,17 +105,24 @@
                   <span class="input-group-text"><i class="fa fa-key fa-fw"></i></span>
                   <input class="form-control" type="password" name = "senha" placeholder="Senha" required = "autofocus"><!--required autofocus-->
                 </div>
+              </div>
+              <div class="col-lg-3 text-right" style="padding-left: 35px;">
+                  <i class="far fa-user fa-5x login-icon"></i>
+              </div>
             </div>
+          </div>
         </div>
         <!-- footer -->
         <div class="modal-footer">
-           <a href="pessoaSemCadastro.html"><input class="btn btn-success btn-lg  btn-block " type="submit" value="Entrar" class="btn"></a>
+            <div class="d-flex justify-content-center">
+              <a href="pessoaSemCadastro.html"><input class="btn btn-primary btn-lg  btn-block " type="submit" value="Entrar" class="btn"></a>
+            </div>
         </div> 
         </form>
 
         <div class="modal-footer">
-            <a href="#"> Não tem uma conta ainda?</a>
-            <input class="btn btn-info btn-lg  btn-block " type="submit" value=" Crie sua Conta" class="btn" data-toggle="modal" data-target="#cadas1">
+            <p>Não tem uma conta ainda?</p>
+            <input class="btn btn-outline-primary btn-lg  btn-block " type="submit" value=" Crie sua Conta" class="btn" data-toggle="modal" data-target="#cadas1">
         </div>  
 
       </div>
@@ -137,25 +146,36 @@
             <div class="form-group">
                 <h5 class="modal-title" id="exampleModalLabel" >Login</h5>
                 <br>
-                <div class="form-group input-group margin-bottom-sm">
-                  <span class="input-group-text"><i class="fas fa-file-signature"></i></span>
-                  <input class="form-control" type="text" name = "CNPJ" placeholder="cnpj" ><!--required autofocus-->
+                <div class="row">
+                  <div class="col-lg-9">
+                      <div class="form-group input-group margin-bottom-sm">
+                          <span class="input-group-text"><i class="fas fa-file-signature"></i></span>
+                          <input class="form-control" type="text" name = "CNPJ" placeholder="CNPJ" ><!--required autofocus-->
+                        </div>
+                        <div class="form-group input-group">
+                          <span class="input-group-text"><i class="fa fa-key fa-fw"></i></span>
+                          <input class="form-control" type="password" name = "senha" placeholder="Senha" ><!--required autofocus-->
+                        </div>
+                  </div>
+                  <div class="col-lg-3 text-right" style="padding-left: 35px;">
+                      <i class="fas fa-building fa-5x login-icon"></i>
+                  </div>
+
                 </div>
-                <div class="form-group input-group">
-                  <span class="input-group-text"><i class="fa fa-key fa-fw"></i></span>
-                  <input class="form-control" type="password" name = "senha" placeholder="Senha" ><!--required autofocus-->
-                </div>
+                
             </div>
         </div>
         <!-- footer -->
         <div class="modal-footer">
-           <a href="areaempre.html"><input class="btn btn-success btn-lg  btn-block " type="submit" value="Entrar" class="btn"></a>
+          <div class="text-center">
+              <a href="areaempre.html"><input class="btn btn-primary btn-lg  " type="submit" value="Entrar" class="btn"></a>
+          </div>
         </div> 
         </form>
 
         <div class="modal-footer">
-            <a href="#"> Não tem uma conta ainda?</a>
-            <input class="btn btn-info btn-lg  btn-block " type="submit" value=" Crie sua Conta" class="btn" data-toggle="modal" data-target="#cadas2">
+           <p>Não tem uma conta ainda?</p>
+            <input class="btn btn-outline-primary btn-lg  btn-block " type="submit" value=" Crie sua Conta" class="btn" data-toggle="modal" data-target="#cadas2">
         </div>  
 
       </div>
@@ -206,7 +226,7 @@
                     </div>
                     <br>
                     <div class="modal-footer">
-                          <button type="submit" id="btnCadastrar" class="btn btn-success btn-block" data-loading-text="Cadastrando...">Criar Cadastro</button>
+                        <a href="pessoaSemCadastro.html"><button type="submit" id="btnCadastrar" class="btn btn-primary btn-block" data-loading-text="Cadastrando...">Cadastrar</button></a> 
                      </div>
                 </form>
             </div>
@@ -221,7 +241,7 @@
 </div>
 <!--  end-Modal -->
 <div class="modal fade" id="cadas2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-md" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel" >Cadastro da Empresa</h5>
@@ -229,111 +249,111 @@
             </div>
             <!-- body -->
             <div class="modal-body">
-                <form method="POST" action="/cadastro">
+                      <form method="POST" action="/cadastro">
                 
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">CNPJ:</span>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="">CNPJ:</span>
+                            </div>
+                            <input type="text" class="form-control" maxlength="15" id="cnpj" name="nome" placeholder=" XX.XXX.XXX/XXXX-XX" ng-model="cadastroNome" required="autofocus">  
                         </div>
-                        <input type="text" class="form-control" maxlength="15" id="cnpj" name="nome" placeholder=" XX.XXX.XXX/XXXX-XX" ng-model="cadastroNome" required="autofocus">  
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">Nome da Empresa:</span>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="">Nome da Empresa:</span>
+                            </div>
+                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Bhrama" maxlength="11">
                         </div>
-                        <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Bhrama" maxlength="11">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">Cep:</span>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="">CEP:</span>
+                            </div>
+                            <input type="cepl" class="form-control" id="email" name = "email" placeholder="XXXXX-XXX" ng-model="cadastroCep" required="autofocus">
                         </div>
-                        <input type="cepl" class="form-control" id="email" name = "email" placeholder="XXXXX-XXX" ng-model="cadastroCep" required="autofocus">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="">Endereço:</span>
-                      </div>
-                        <input type="endereco" class="form-control" id="endereco" name = "endereço" placeholder="Rua **** " ng-model="cadastroCep" required="autofocus">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">Número:</span>
+                        <br>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="">Endereço:</span>
+                          </div>
+                            <input type="endereco" class="form-control" id="endereco" name = "endereço" placeholder="Rua **** " ng-model="cadastroCep" required="autofocus">
                         </div>
-                        <input type="numero" class="form-control" id="num" name = "nam" placeholder="0000" ng-model="cadastroNum" required="autofocus">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">Complemento:</span>
-                      </div>
-                      <textarea class="form-control" aria-label="With textarea" placeholder="Entre as Ruas tal e a Rua tal"  required="autofocus"></textarea>
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">Bairro:</span>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="">Número:</span>
+                            </div>
+                            <input type="numero" class="form-control" id="num" name = "nam" placeholder="0000" ng-model="cadastroNum" required="autofocus">
                         </div>
-                        <input type="bairro" class="form-control" id="bairro" name = "bairro" placeholder="*******" ng-model="cadastroBai" required="autofocus">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">Estado:</span>
+                        <br>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">Complemento:</span>
+                          </div>
+                          <textarea class="form-control" aria-label="With textarea" placeholder="Entre as Ruas tal e a Rua tal"  required="autofocus"></textarea>
                         </div>
-                        <input type="Esta" class="form-control" id="esta" name = "esta" placeholder="Mato Grosso do Sul" ng-model="cadastroEsta" required="autofocus">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">Cidade:</span>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="">Bairro:</span>
+                            </div>
+                            <input type="bairro" class="form-control" id="bairro" name = "bairro" placeholder="*******" ng-model="cadastroBai" required="autofocus">
                         </div>
-                        <input type="Cidad" class="form-control" id="cid" name = "cid" placeholder="Corumbá" ng-model="cadastroCid" required="autofocus">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">Ramo da Empresa:</span>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="">Estado:</span>
+                            </div>
+                            <input type="Esta" class="form-control" id="esta" name = "esta" placeholder="Mato Grosso do Sul" ng-model="cadastroEsta" required="autofocus">
                         </div>
-                        <input type="text" class="form-control" id="Remp" name = "raEm" placeholder="Industrial" ng-model="cadastroRempre" required="autofocus">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">Telefone da Empresa:</span>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="">Cidade:</span>
+                            </div>
+                            <input type="Cidad" class="form-control" id="cid" name = "cid" placeholder="Corumbá" ng-model="cadastroCid" required="autofocus">
                         </div>
-                        <input class="form-control" id="telefone" name = "telefone" maxlength="13" placeholder=" (00) 00000-0000" OnKeyPress="formatar('##-#####-####', this)" required="autofocus">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">Site da Empresa:</span>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="">Ramo da Empresa:</span>
+                            </div>
+                            <input type="text" class="form-control" id="Remp" name = "raEm" placeholder="Industrial" ng-model="cadastroRempre" required="autofocus">
                         </div>
-                        <input type="link" class="form-control" id="Link" name = "url" placeholder="www.Uol.com.br" ng-model="cadastroSite" required="autofocus">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">Url Linkdin:</span>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="">Telefone da Empresa:</span>
+                            </div>
+                            <input class="form-control" id="telefone" name = "telefone" maxlength="13" placeholder=" (00) 00000-0000" OnKeyPress="formatar('##-#####-####', this)" required="autofocus">
                         </div>
-                        <input type="linkdin" class="form-control" id="Link" name = "url" placeholder="acmaeaewww.dmosewm/dmsodmf" ng-model="cadastroLinkdin" required="autofocus">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">Senha:</span>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="">Site da Empresa:</span>
+                            </div>
+                            <input type="link" class="form-control" id="Link" name = "url" placeholder="www.Uol.com.br" ng-model="cadastroSite" required="autofocus">
                         </div>
-                        <input type="password" class="form-control" id="inputSenha" name="senha" placeholder="Senha" ng-model="cadastroSenha" required="autofocus">
-                    </div>
-
-                    <div class="modal-footer">
-                          <button type="submit" id="btnCadastrar" class="btn btn-success btn-block" data-loading-text="Cadastrando...">Criar Cadastro</button>
-                     </div>
-                </form>
-            </div>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="">Url Linkdin:</span>
+                            </div>
+                            <input type="linkdin" class="form-control" id="Link" name = "url" placeholder="acmaeaewww.dmosewm/dmsodmf" ng-model="cadastroLinkdin" required="autofocus">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="">Senha:</span>
+                            </div>
+                            <input type="password" class="form-control" id="inputSenha" name="senha" placeholder="Senha" ng-model="cadastroSenha" required="autofocus">
+                        </div>
+    
+                        <div class="modal-footer">
+                             <a href="areaempre.html"> <button type="submit" id="btnCadastrar" class="btn btn-primary btn-block" data-loading-text="Cadastrando...">Cadastrar</button> </a>
+                         </div>
+                    </form>
+          </div>
 
             <!-- footer -->
             <div class="modal-footer">
