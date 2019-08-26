@@ -259,13 +259,13 @@
                           <div class="card">
                             <div class="card-header" id="headingOne">
                               <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                   Dados da Pessoa Jurídica
                                 </button>
                               </h5>
                             </div>
                         
-                            <div id="collapseOne" class="collapse collapsed" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                               <div class="card-body">
                                 <div class="input-group">
                                   <div class="input-group-prepend">
@@ -309,14 +309,20 @@
                                 <input type="linkdin" class="form-control" id="Link" name = "url" placeholder="acmaeaewww.dmosewm/dmsodmf" value="linkedin.com/lm/bembom" ng-model="cadastroLinkdin" required="autofocus">
                             </div>
                             <br>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="">Senha:</span>
+                              </div>
+                              <input type="password" class="form-control" id="inputSenha" name="senha" placeholder="Senha" ng-model="cadastroSenha" required="autofocus">
+                          </div>
                               </div>
                             </div>
                           </div>
-                          <div class="card">
+                        <!--<div class="card">
                             <div class="card-header" id="headingTwo">
                               <h5 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                  Endereço da Pessoa Jurídica
+                                  Endereço da Pessoa JUrídica
                                 </button>
                               </h5>
                             </div>
@@ -373,16 +379,11 @@
                               <br>
                               </div>
                             </div>
-                          </div>
+                          </div>-->  
                         
                      
                        
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="">Senha:</span>
-                            </div>
-                            <input type="password" class="form-control" id="inputSenha" name="senha" placeholder="Senha" ng-model="cadastroSenha" required="autofocus">
-                        </div>
+                        
     
                         <div class="modal-footer">
                              <a href="areaempre.html"> <button type="submit" id="btnCadastrar" class="btn btn-primary btn-block" data-loading-text="Cadastrando...">Cadastrar</button> </a>
