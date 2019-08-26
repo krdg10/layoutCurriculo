@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>areaempre</title>
+  <title>Vagas Disponíveis</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -18,9 +18,8 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-
 </head>
+
 <body id="page-top">
 
   <!-- Page Wrapper -->
@@ -30,7 +29,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="areaempre.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="pessoaEm.html">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
@@ -42,7 +41,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="areaempre.html">
+        <a class="nav-link" href="pessoaEm.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Painel</span></a>
       </li>
@@ -52,7 +51,7 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Interface
+        Opções
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
@@ -63,27 +62,11 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="vagasDisponiveis.html">Ver Minhas Vagas</a>
+            <a class="collapse-item" href="buttons.html">Ver Minhas Vagas</a>
             <a class="collapse-item" href="cadas-vaga.html">Cadastrar Nova</a>
           </div>
         </div>
-      </li>
-
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Profissionais</span>
-        </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="profiDisp.html">Profissionais Disponíveis</a>
-          <!--   <a class="collapse-item" href="utilities-border.html">a</a> -->
-          </div>
-        </div>
-      </li>
-
-      
+      </li>      
 
     </ul>
     <!-- End of Sidebar -->
@@ -114,8 +97,8 @@
             </div>
           </form>
 
-          <!-- Topbar Navbar -->
-          <ul class="navbar-nav ml-auto">
+           <!-- Topbar Navbar -->
+           <ul class="navbar-nav ml-auto">
 
             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
             <li class="nav-item dropdown no-arrow d-sm-none">
@@ -205,14 +188,10 @@
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                   Configurações
                 </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Atividades
-                </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
+                  Sair
                 </a>
               </div>
             </li>
@@ -224,131 +203,60 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Painel</h1>
-            <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
-          </div>
-         
-          <!-- Content Row -->
+          <h1 class="h3 mb-4 text-gray-800">Vagas Disponíveis</h1>
           <div class="row">
-
-            
-            <div class="col-xl-6 col-md-12 mb-8">
-              <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Novas Vagas Disponibilizadas </div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">4</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            
-            <div class="col-xl-6 col-md-12 mb-8">
-              <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Respostas Recebidas</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>  
-
-          
-          
-           <div class="row">
-
-           
-            <div class="col-lg-6 mb-4">
-
-           
+            <div class="col-lg-12">
+              <!-- Circle Buttons -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Processos em Andamento</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Vagas Disponíveis</h6>
                 </div>
                 <div class="card-body">
-                  <h4 class="small font-weight-bold">Plafentagem <span class="float-right">De 7 vagas faltam 3</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Gerente <span class="float-right">De 5 vagas falta 1</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Encaixotador <span class="float-right">De 12 vagas faltam 8</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Atendentes<span class="float-right">De 5 vagas faltam 2</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Supervisor<span class="float-right">As vagas estão completas</span></h4>
-                  <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                  <div class="tab-pane fade show active" id="dezesseis" role="tabpanel" aria-labelledby="nav-dezesseis">
+                    <table class="table table-striped">
+                      <thead>
+                          <tr class="hidden-xs">
+                              <th scope="col">Vaga</th>
+                              <th scope="col">Informações</th>
+                              <th scope="col" >Ações</th>
+                            </tr>
+                      </thead>
 
-            <div class="col-lg-6 mb-6">
-             <div class="row">
-            <div class="col-sm-12">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Agendar Entrevista</h5>
-                  <div class="form-group">
-                      <label for="exampleFormControlSelect1">Vaga:</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Encaixotador</option>
-                        <option>Supervisor</option>
-                        <option>Atendente</option>
-                        <option> Gerente</option>
-                        <option>Planfetagem</option>
-                      </select>
+                      <tbody>  
+                        <tr>
+                          <td>Panflentagem </td>
+                          <td><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-info btn-sm">Visualizar</a></td>
+                          <td><button class="btn btn-warning btn-sm" type="button" > Editar </button>
+                          <button class="btn btn-danger btn-sm" type="button" > Excluir</button></td>
+                        </tr>
+                        <tr>
+                          <td>Atendentes</td>
+                          <td><a href="#" data-toggle="modal" data-target=".carrinho" class="btn btn-info btn-sm">Visualizar</a></td>
+                          <td><button class="btn btn-warning btn-sm" type="button" > Editar </button>
+                          <button class="btn btn-danger btn-sm" type="button" > Excluir</button></td>
+                        </tr>
+                        <tr>
+                          
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-                  <p>Data: <input type="text"></p>
-                  <a href="#" class="btn btn-primary">Agendar</a>
                 </div>
               </div>
             </div>
           </div>
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
-                </div>
-                <div class="card-body">
-                  <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes.</p>
-                  <p class="mb-0">Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.</p>
-                </div>
-              </div>
-
-            </div>
-          </div> 
-
         </div>
-        
+        <!-- /.container-fluid -->
 
       </div>
-      
+      <!-- End of Main Content -->
 
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            <span>Copyright &copy; Banco de Currículos 2019</span>
           </div>
         </div>
       </footer>
@@ -365,25 +273,77 @@
     <i class="fas fa-angle-up"></i>
   </a>
 
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Logout Modal-->
+ <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Tem certeza?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-body">Selecione sair para encerrar sua sessão</div>
         <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="index.html">Logout</a>
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+          <a class="btn btn-primary" href="index.html">Sair</a>
         </div>
       </div>
     </div>
   </div>
 
+<!--ver mais modal-->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Especificações</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">        
+      <h5>Número de vagas: 1</h5>
+      <h5>Empresa: Coca-Cola</h5>
+      <h5>Salário: A combinar - Média salarial para Panfleteiro</h5>
+      <h5>Cidade/Estado: Corumbá/ MS</h5>
+      <h5>Descrição:</h5>
+       <p>- Divulgação externa fazendo abordagem de clientes com intuito de apresentar a escola aos interessados, captar cadastros e direciona-los ao setor comercial.</p>
+       <p>- Panfletagem</p>
+       <p>- Ajudar na organização e execução de eventos externos.</p>
+       
+       <h5>Requisitos</h5>
+       <p>-Ensino médio completo ou cursando, comunicação e espontaneidade.</p>
+       <p>-Goste de relacionar com o público.</p>
+       <p>-Já tenha trabalhado com vendas internas ou externas.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade carrinho" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Título do modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Texto do corpo do modal, é aqui.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -394,8 +354,6 @@
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
-
 </body>
-
 
 </html>
