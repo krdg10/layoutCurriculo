@@ -218,15 +218,15 @@
                       <tbody>
                         <tr class="hidden-xs">
                           <th scope="col">Vaga</th>
-                          <th scope="col">Respostas</th>
+                          <th scope="col">Informações</th>
                         </tr>
                         <tr>
-                          <td>Plafentagem </td>
-                          <td><a href="#">Ver Todas</a></td>
+                          <td>Panflentagem </td>
+                          <td><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">Sobre</a></td>
                         </tr>
                         <tr>
                           <td>Atendentes</td>
-                          <td><a href="#">Ver Todas</a></td>
+                          <td><a href="#" data-toggle="modal" data-target=".carrinho">Sobre</a></td>
                         </tr>
                       </tbody>
                     </table>
@@ -262,25 +262,77 @@
     <i class="fas fa-angle-up"></i>
   </a>
 
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Logout Modal-->
+ <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Tem certeza?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-body">Selecione sair para encerrar sua sessão</div>
         <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+          <a class="btn btn-primary" href="index.html">Sair</a>
         </div>
       </div>
     </div>
   </div>
 
+<!--ver mais modal-->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Especificações</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">        
+      <h5>Número de vagas: 1</h5>
+      <h5>Empresa: Coca-Cola</h5>
+      <h5>Salário: A combinar - Média salarial para Panfleteiro</h5>
+      <h5>Cidade/Estado: Corumbá/ MS</h5>
+      <h5>Descrição:</h5>
+       <p>- Divulgação externa fazendo abordagem de clientes com intuito de apresentar a escola aos interessados, captar cadastros e direciona-los ao setor comercial.</p>
+       <p>- Panfletagem</p>
+       <p>- Ajudar na organização e execução de eventos externos.</p>
+       
+       <h5>Requisitos</h5>
+       <p>-Ensino médio completo ou cursando, comunicação e espontaneidade.</p>
+       <p>-Goste de relacionar com o público.</p>
+       <p>-Já tenha trabalhado com vendas internas ou externas.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade carrinho" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Título do modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Texto do corpo do modal, é aqui.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
