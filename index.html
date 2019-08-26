@@ -255,98 +255,128 @@
             <!-- body -->
             <div class="modal-body">
                       <form method="POST" action="/cadastro">
-                
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="">CNPJ:</span>
+                        <div class="accordion" id="accordionExample">
+                          <div class="card">
+                            <div class="card-header" id="headingOne">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                  Dados da Pessoa Jurídica
+                                </button>
+                              </h5>
                             </div>
-                            <input type="text" class="form-control" maxlength="15" id="cnpj" name="nome" placeholder=" XX.XXX.XXX/XXXX-XX" ng-model="cadastroNome" required="autofocus">  
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="">Nome da Empresa:</span>
+                        
+                            <div id="collapseOne" class="collapse collapsed" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="">CNPJ:</span>
+                                  </div>
+                                  <input type="text" class="form-control" maxlength="15" id="cnpj" name="nome" placeholder=" XX.XXX.XXX/XXXX-XX" value="92.545.545/1234-01" ng-model="cadastroNome" required="autofocus">  
+                              </div>
+                              <br>
+                              <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="">Nome da Empresa:</span>
+                                  </div>
+                                  <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Bhrama" value="Supermercado BemBom" maxlength="11">
+                              </div>
+                              <br>
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="">Ramo da Empresa:</span>
+                                </div>
+                                <input type="text" class="form-control" id="Remp" name = "raEm" placeholder="Industrial" value="Comércio" ng-model="cadastroRempre" required="autofocus">
                             </div>
-                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Bhrama" maxlength="11">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="">CEP:</span>
+                            <br>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="">Telefone da Empresa:</span>
+                                </div>
+                                <input class="form-control" id="telefone" name = "telefone" maxlength="13" placeholder=" (00) 00000-0000" value="(67) 3233-2425" OnKeyPress="formatar('##-#####-####', this)" required="autofocus">
                             </div>
-                            <input type="cepl" class="form-control" id="email" name = "email" placeholder="XXXXX-XXX" ng-model="cadastroCep" required="autofocus">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text" id="">Endereço:</span>
+                            <br>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="">Site da Empresa:</span>
+                                </div>
+                                <input type="link" class="form-control" id="Link" name = "url" placeholder="www.Uol.com.br" value="bembom.com.br" ng-model="cadastroSite" required="autofocus">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="">Url Linkdin:</span>
+                                </div>
+                                <input type="linkdin" class="form-control" id="Link" name = "url" placeholder="acmaeaewww.dmosewm/dmsodmf" value="linkedin.com/lm/bembom" ng-model="cadastroLinkdin" required="autofocus">
+                            </div>
+                            <br>
+                              </div>
+                            </div>
                           </div>
-                            <input type="endereco" class="form-control" id="endereco" name = "endereço" placeholder="Rua **** " ng-model="cadastroCep" required="autofocus">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="">Número:</span>
+                          <div class="card">
+                            <div class="card-header" id="headingTwo">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Endereço da Pessoa Jurídica
+                                </button>
+                              </h5>
                             </div>
-                            <input type="numero" class="form-control" id="num" name = "nam" placeholder="0000" ng-model="cadastroNum" required="autofocus">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">Complemento:</span>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="">CEP:</span>
+                                  </div>
+                                  <input type="cepl" class="form-control" id="email" name = "email" placeholder="XXXXX-XXX" value="79310-600" ng-model="cadastroCep" required="autofocus">
+                              </div>
+                              <br>
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="">Endereço:</span>
+                                </div>
+                                  <input type="endereco" class="form-control" id="endereco" name = "endereço" placeholder="Rua **** " value="Rua Ladário" ng-model="cadastroCep" required="autofocus">
+                              </div>
+                              <br>
+                              <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="">Número:</span>
+                                  </div>
+                                  <input type="numero" class="form-control" id="num" name = "nam" placeholder="0000" value="1002" ng-model="cadastroNum" required="autofocus">
+                              </div>
+                              <br>
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Complemento:</span>
+                                </div>
+                                <input type="complemento" class="form-control" aria-label="With textarea" value="Próximo ao IFMS" placeholder="Próximo ao IFMS"  required="autofocus"></textarea>
+                              </div>
+                              <br>
+                              <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="">Bairro:</span>
+                                  </div>
+                                  <input type="bairro" class="form-control" id="bairro" name = "bairro" placeholder="*******" value="Popular Velha" ng-model="cadastroBai" required="autofocus">
+                              </div>
+                              <br>
+                              <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="">Estado:</span>
+                                  </div>
+                                  <input type="Esta" class="form-control" id="esta" name = "esta" placeholder="Mato Grosso do Sul" value="MS" ng-model="cadastroEsta" required="autofocus">
+                              </div>
+                              <br>
+                              <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="">Cidade:</span>
+                                  </div>
+                                  <input type="Cidad" class="form-control" id="cid" name = "cid" placeholder="Corumbá" value="Corumbá" ng-model="cadastroCid" required="autofocus">
+                              </div>
+                              <br>
+                              </div>
+                            </div>
                           </div>
-                          <textarea class="form-control" aria-label="With textarea" placeholder="Entre as Ruas tal e a Rua tal"  required="autofocus"></textarea>
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="">Bairro:</span>
-                            </div>
-                            <input type="bairro" class="form-control" id="bairro" name = "bairro" placeholder="*******" ng-model="cadastroBai" required="autofocus">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="">Estado:</span>
-                            </div>
-                            <input type="Esta" class="form-control" id="esta" name = "esta" placeholder="Mato Grosso do Sul" ng-model="cadastroEsta" required="autofocus">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="">Cidade:</span>
-                            </div>
-                            <input type="Cidad" class="form-control" id="cid" name = "cid" placeholder="Corumbá" ng-model="cadastroCid" required="autofocus">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="">Ramo da Empresa:</span>
-                            </div>
-                            <input type="text" class="form-control" id="Remp" name = "raEm" placeholder="Industrial" ng-model="cadastroRempre" required="autofocus">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="">Telefone da Empresa:</span>
-                            </div>
-                            <input class="form-control" id="telefone" name = "telefone" maxlength="13" placeholder=" (00) 00000-0000" OnKeyPress="formatar('##-#####-####', this)" required="autofocus">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="">Site da Empresa:</span>
-                            </div>
-                            <input type="link" class="form-control" id="Link" name = "url" placeholder="www.Uol.com.br" ng-model="cadastroSite" required="autofocus">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="">Url Linkdin:</span>
-                            </div>
-                            <input type="linkdin" class="form-control" id="Link" name = "url" placeholder="acmaeaewww.dmosewm/dmsodmf" ng-model="cadastroLinkdin" required="autofocus">
-                        </div>
-                        <br>
+                        
+                     
+                       
                         <div class="input-group">
                             <div class="input-group-prepend">
                               <span class="input-group-text" id="">Senha:</span>
