@@ -8908,6 +8908,9 @@ button.bg-dark:focus {
   .mx-sm-1 {
     margin-left: 0.25rem !important;
   }
+  .card{
+    margin: 5px !important;
+  }
   .m-sm-2 {
     margin: 0.5rem !important;
   }
