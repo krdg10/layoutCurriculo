@@ -218,89 +218,194 @@
           <!-- End of Topbar -->
 
          <!-- Begin Page Content -->
-          <div class="d-flex justify-content-center">
-            <div class="container" style="padding: 3% !important;" >
-              <div class="row">
-                <div class="col-lg-6" style="margin-left: 220px !important;
-                ">
-                  <div class="d-flex justify-content-center">
-                    <div class="card shadow mb-4">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Cadastrar Nova Vaga</h6>
-                      </div>
-                          <div class="card-body">
-                            <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text" id=""> Número de Vagas:</span>
-                              </div>
-                              <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Atendente" value="5">
-                            </div>
-                            <br>
-                            <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text" id="">Empresa:</span>
-                              </div>
-                              <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Supermercado Bem Bom">
-                            </div>
-                            <br>
-                            <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text" id=""> Tipo de Vaga:</span>
-                              </div>
-                              <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Atendente" value="Atendente" value="5">
-                            </div>
-                            <br>
-                            <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text" id=""> Tipo de Contrato:</span>
-                              </div>
-                              <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Atendente" value="CLT" value="5">
-                            </div>
-                            <br>
-                            <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text" id="">Sálario:</span>
-                              </div>
-                              <input type="text" class="form-control" id="cpf" name="cpf" placeholder="R$ 1000,00">
-                            </div>
-                            <br>
-                            <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text" id="">Cidade/Estado:</span>
-                              </div>
-                              <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Corumbá/MS">
-                            </div>
-                            <br>
-                            <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text">Descrição:</span>
-                              </div>
-                              <textarea class="form-control" aria-label="With textarea" placeholder="-Precisa-se de ensino-médio completo"  required="autofocus"></textarea>
-                            </div>
-                            <br>
-                            <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text">Requisitos:</span>
-                              </div>
-                              <textarea class="form-control" aria-label="With textarea" placeholder="Ter no mínimo dois anos trabalhando na área"  required="autofocus"></textarea>
-                            </div>
-                            <br>
-                            <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text">Benefícios:</span>
-                              </div>
-                              <textarea class="form-control" aria-label="With textarea" placeholder="-Vale alimentação"  required="autofocus"></textarea>
-                            </div>          
-                            <br>    
-                                <a href="vagasDisponibilizadas.html"> <button type="submit" id="btnCadastrar" class="btn btn-primary btn-block" data-loading-text="Cadastrando...">Cadastrar</button> </a>            
-                            
-                          </div>
-                        </div>   
-                    </div>
-                </div>
+        <div class="container"  style="padding: 1% !important;" >
+          <div class="card">
+            <div class="card-body">
+              <div class="card-header py-3">
+                <h2 class="m-0 font-weight-bold text-primary">Cadastrar Nova Vaga <i class="far fa-file-alt"></i> </h2>
               </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id=""> Número de Vagas:</span>
+                </div>
+                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Atendente" value="5">
+                </div>
+                <br>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="">Empresa:</span>
+                  </div>
+                  <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Supermercado Bem Bom">
+                </div>
+                <br>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id=""> Tipo de Vaga:</span>
+                  </div>
+                  <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Atendente" value="Atendente" value="5">
+                </div>
+                <br>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id=""> Tipo de Contrato:</span>
+                  </div>
+                  <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CLT" value="CLT" value="5">
+                </div>
+                <br>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="">Sálario:</span>
+                  </div>
+                  <input type="text" class="form-control" id="cpf" name="cpf" placeholder="R$ 1000,00">
+                </div>
+                <br>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="">Estado:</span>
+                  </div>  
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option selected>Selecione a opção</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                  </select>
+                </div>
+                <br>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="">Cidade:</span>
+                  </div>  
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option selected>Selecione a opção</option>
+                    <option value="AC">Água Clara</option>
+                    <option value="AL">Alcinópolis</option>
+                    <option value="AP">Amambí</option>
+                    <option value="AM">Anastácio</option>
+                    <option value="BA">Anaurilância</option>
+                    <option value="CE">Angélica</option>
+                    <option value="DF">Antônio João</option>
+                    <option value="ES">Aparecida do Taboado</option>
+                    <option value="GO">Aquidauana</option>
+                    <option value="MA">Aral Moreira</option>
+                    <option value="MT">Bandeirantes</option>
+                    <option value="MS">Bataguassu</option>
+                    <option value="MG">Bataiporã</option>
+                    <option value="PA">Bela Vista</option>
+                    <option value="PB">Bodoquena</option>
+                    <option value="PR">Bonito</option>
+                    <option value="PE">Brasilândia</option>
+                    <option value="PI">Caarapó</option>
+                    <option value="RJ">Camapuã</option>
+                    <option value="RN">Campo Grande</option>
+                    <option value="RS">Caracol</option>
+                    <option value="RO">Cassilândia</option>
+                    <option value="RR">Corguinho</option>
+                    <option value="SC">Coronel Sapucaia</option>
+                    <option value="SP">Corumbá</option>
+                    <option value="SE">Costa Rica</option>
+                    <option value="TO">Coxim</option>
+                    <option value="TO">Deodápolis</option>
+                    <option value="TO">Dois Irmãos do Buriti</option>
+                    <option value="TO">Douradina</option>
+                    <option value="TO">Eldorado</option>
+                    <option value="TO">Fátima do Sul</option>
+                    <option value="TO">Glória de Dourados</option>
+                    <option value="TO">Guia Lopes de Laguna</option>
+                    <option value="TO">Iguatemi</option>
+                    <option value="TO">Inocência</option>
+                    <option value="TO">Itaporã</option>
+                    <option value="TO">Itaquraí</option>
+                    <option value="TO">Ivinhema</option>
+                    <option value="TO">Japorã</option>
+                    <option value="TO">Jaguari</option>
+                    <option value="TO">Jardin</option>
+                    <option value="TO">Jateí</option>
+                    <option value="TO">Juti</option>
+                    <option value="TO">Ladário</option>
+                    <option value="TO">Laguna Carapã</option>
+                    <option value="TO">Maracaju</option>
+                    <option value="TO">Miranda</option>
+                    <option value="TO">Mundo Novo</option>
+                    <option value="TO">Naviraí</option>
+                    <option value="TO">Nioaque</option>
+                    <option value="TO">Nova Alvorada do Sul</option>
+                    <option value="TO">Nova Andradina</option>
+                    <option value="TO">Novo Horizonte do Sul</option>
+                    <option value="TO">Paranaíba</option>
+                    <option value="TO">Paranhos</option>
+                    <option value="TO">Pedro Gomes</option>
+                    <option value="TO">Ponta Porã</option>
+                    <option value="TO">Porto Mutinho</option>
+                    <option value="TO">Ribas do Rio Pardo</option>
+                    <option value="TO">Rio Brilhante</option>
+                    <option value="TO">Rio Negro</option>
+                    <option value="TO">Rio Verde de Mato Grosso</option>
+                    <option value="TO">Rochedo</option>
+                    <option value="TO">Santa Rita do Pardo</option>
+                    <option value="TO">São Gabriel do Oeste</option>
+                    <option value="TO">Selvíria</option>
+                    <option value="TO">Sete Quedas</option>
+                    <option value="TO">Sidrolândia</option>
+                    <option value="TO">Sonora</option>
+                    <option value="TO">Tacuru</option>
+                    <option value="TO">Taquarussu</option>
+                    <option value="TO">Terenos</option>
+                    <option value="TO">Três Lagoas</option>
+                    <option value="TO">Vicentina</option>
+                  </select>
+                </div>
+                <br>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Descrição:</span>
+                  </div>
+                  <textarea class="form-control" aria-label="With textarea" placeholder="-Precisa-se de ensino-médio completo"  required="autofocus"></textarea>
+                </div>
+                <br>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Requisitos:</span>
+                  </div>
+                  <textarea class="form-control" aria-label="With textarea" placeholder="Ter no mínimo dois anos trabalhando na área"  required="autofocus"></textarea>
+                </div>
+                <br>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Benefícios:</span>
+                  </div>
+                  <textarea class="form-control" aria-label="With textarea" placeholder="-Vale alimentação"  required="autofocus"></textarea>
+                </div>          
+                <br>
+                <div class="card-footer text-muted">
+                  <a href="vagasDisponibilizadas.html"> <button type="submit" id="btnCadastrar" class="btn btn-primary btn-block" data-loading-text="Cadastrando...">Cadastrar</button> </a>            
+                </div>    
             </div>
-          </div>
+          </div>           
+        </div>
           <!-- /.container-fluid -->
   
         </div>
