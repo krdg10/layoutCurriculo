@@ -56,18 +56,25 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link collapsed" class="collapse-item" href="vagasDisponibilizadas.html">
           <i class="far fa-eye"></i>
-          <span>Minhas Vagas</span>
+          <span>Ver Minhas Vagas</span>
         </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Ver Minhas Vagas</a>
-            <a class="collapse-item" href="cadas-vaga.html">Cadastrar Nova</a>
-          </div>
-        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="cadas-vaga.html">
+          <i class="fas fa-plus"></i>
+          <span>Cadastrar Nova Vaga</span>
+        </a>
       </li>      
-
+      
+      <!-- Nav Item - Utilities Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="profiDisp.html" data-toggle="collapse-item" >
+          <i class="fas fa-users"></i>
+          <span>Profissionais Disponíveis</span>
+        </a>
+      </li>
     </ul>
     <!-- End of Sidebar -->
 
@@ -210,7 +217,7 @@
               <!-- Circle Buttons -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Minhas Vagas</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Vagas</h6>
     
                 </div>
                 <div class="card-body">
@@ -246,7 +253,7 @@
                         </tr>
                         <tr>
                             <td>Atendentes</td>
-                            <td><a href="#" data-toggle="modal" data-target=".carrinho" class="btn btn-info btn-sm">Visualizar</a></td>
+                            <td><a  href="#" data-toggle="modal" data-target=".carrinho" class="btn btn-info btn-sm">Visualizar</a></td>
                             <td><button class="btn btn-warning btn-sm" type="button" > Editar </button>
                             <button class="btn btn-danger btn-sm" type="button" > Excluir</button></td>
                         </tr>
@@ -311,56 +318,93 @@
 
 <!--ver mais modal-->
 
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Especificações</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">        
-      <h5>Número de vagas: 1</h5>
-      <h5>Empresa: Supermercado Bem Bom</h5>
-      <h5>Salário: A combinar - Média salarial para Panfleteiro</h5>
-      <h5>Cidade/Estado: Corumbá/ MS</h5>
-      <h5>Descrição:</h5>
-       <p>- Divulgação externa fazendo abordagem de clientes com intuito de apresentar a escola aos interessados, captar cadastros e direciona-los ao setor comercial.</p>
-       <p>- Panfletagem</p>
-       <p>- Ajudar na organização e execução de eventos externos.</p>
-       
-       <h5>Requisitos</h5>
-       <p>-Ensino médio completo ou cursando, comunicação e espontaneidade.</p>
-       <p>-Goste de relacionar com o público.</p>
-       <p>-Já tenha trabalhado com vendas internas ou externas.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-      </div>
-    </div>
-  </div>
-</div>
+<!--ver mais modal-->
 
-<div class="modal fade carrinho" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Título do modal</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Texto do corpo do modal, é aqui.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Especificações</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">        
+        <h5>Número de vagas: </h5>
+        <p>1</p>
+        <h5>Empresa:</h5>
+        <p>Supermercado Bem Bom</p>
+        <h5>Tipo de Vaga:</h5>
+        <p>Panfletagem</p>
+        <h5>Tipo de Contrato:</h5>
+        <p>CLT</p>
+        <h5>Salário:</h5>
+        <p> A combinar - Média salarial para Panfleteiro</p>
+        <h5>Cidade/Estado: </h5>
+        <p>Corumbá/ MS</p>
+        
+        <h5>Descrição:</h5>
+         <p>- Divulgação externa fazendo abordagem de clientes com intuito de apresentar a escola aos interessados, captar cadastros e direciona-los ao setor comercial.</p>
+         <p>- Ajudar na organização e execução de eventos externos.</p>
+         
+         <h5>Requisitos</h5>
+         <p>-Ensino médio completo ou cursando, comunicação e espontaneidade.</p>
+         <p>-Goste de relacionar com o público.</p>
+         <p>-Já tenha trabalhado com vendas internas ou externas.</p>
+
+         <h5>Benefícios:</h5>
+         <p>-Vale Alimentação</p>
+         <p>-Vale Transporte</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <div class="modal fade carrinho" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Especificações</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Número de vagas: </h5>
+          <p>1</p>
+          <h5>Empresa:</h5>
+          <p>Supermercado Bem Bom</p>
+          <h5>Tipo de Vaga:</h5>
+          <p>Atendente</p>
+          <h5>Tipo de Contrato:</h5>
+          <p>CLT</p>
+          <h5>Salário:</h5>
+          <p> R$ 1300,00</p>
+          <h5>Cidade/Estado: </h5>
+          <p>Corumbá/ MS</p>
+          
+          <h5>Descrição:</h5>
+           <p>-Realizar atendimento aos clientes</p>
+           <p>-Ajudar na organização e execução de eventos externos.</p>
+           
+           <h5>Requisitos</h5>
+           <p>-Curso Técnico em Atendimento e Vendas.</dp>
+           <p>-Goste de relacionar com o público.</p>
+           <p>-Já tenha trabalhado em algum setor de atendimento.</p>
+
+           <h5>Benefícios:</h5>
+           <p>-Vale Alimentação</p>
+           <p>-Vale Transporte</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

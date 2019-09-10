@@ -1,4 +1,6 @@
-
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
 .column {
     float: left;
     width: 50%;

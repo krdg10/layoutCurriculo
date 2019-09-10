@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Painel</title>
+  <title>profDispo</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -18,9 +18,8 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.css" rel="stylesheet">
 
-  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"> -->
-
 </head>
+
 <body id="page-top">
 
   <!-- Page Wrapper -->
@@ -55,7 +54,7 @@
         Opções
       </div>
 
-      <!-- Nav Item - Pages Collapse Menu -->
+     <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" class="collapse-item" href="vagasDisponibilizadas.html">
           <i class="far fa-eye"></i>
@@ -71,8 +70,9 @@
       </li>
 
       <!-- Nav Item - Utilities Collapse Menu -->
+      <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="profiDisp.html" data-toggle="collapse-item" >
+        <a class="nav-link collapsed" class="collapse-item" href="profiDisp.html"  >
           <i class="fas fa-users"></i>
           <span>Profissionais Disponíveis</span>
         </a>
@@ -109,8 +109,8 @@
             </div>
           </form>
 
-          <!-- Topbar Navbar -->
-          <ul class="navbar-nav ml-auto">
+           <!-- Topbar Navbar -->
+           <ul class="navbar-nav ml-auto">
 
             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
             <li class="nav-item dropdown no-arrow d-sm-none">
@@ -185,28 +185,28 @@
             <div class="topbar-divider d-none d-sm-block"></div>
 
             <!-- Nav Item - User Information -->
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Supermercado Bem Bom</span>
-                <img class="img-profile rounded-circle" src="https://www.loginradius.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png">
-              </a>
-              <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Perfil
+              <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="mr-2 d-none d-lg-inline text-gray-600 small">Supermercado Bem Bom</span>
+                  <img class="img-profile rounded-circle" src="https://www.loginradius.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png">
                 </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Configurações
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Sair
-                </a>
-              </div>
-            </li>
+                <!-- Dropdown - User Information -->
+                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Perfil
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Configurações
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="pessoaEm" data-toggle="modal" data-target="#logoutModal">
+                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Sair
+                  </a>
+                </div>
+              </li>
 
           </ul>
 
@@ -215,173 +215,61 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Painel</h1>
-            <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
-          </div>
-         
-          <!-- Content Row -->
           <div class="row">
-
-            
-            <div class="col-xl-6 col-md-12 mb-8">
-              <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <a href="vagasDisponiveis.html"><div class="font-weight-bold text-primary text-uppercase mb-1" >Vagas Disponíveis </div></a>
-                      <div class="h2 mb-0 font-weight-bold text-gray-900">2</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-calendar fa-2x text-gray-600"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            
-            <div class="col-xl-6 col-md-12 mb-8">
-              <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class=" font-weight-bold text-success text-uppercase mb-1">currículos recebidos</div>
-                      <center><div class="h5 mb-0 font-weight-bold text-gray-800"><h2> 10 <i class="fas fa-users"></i></h2></div></center>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>  
-
-          
-          
-           <div class="row">
-
-           
-            <div class="col-lg-6 mb-4">
-
-           
+            <div class="col-lg-10">
+              <!-- Circle Buttons -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Processos em Andamento</h6>
+                  <h3 class="m-0 font-weight-bold text-primary text-center"><i class="fas fa-user-circle fa-6x"></i></h3>
+                  <h1 class="h3 mb-4 text-gray-800 text-center">Jorge da Silva</h1>
                 </div>
                 <div class="card-body">
-                  <h4 class="small font-weight-bold">Panfletagem <span class="float-right">De 7 vagas falta 1 </span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Gerente <span class="float-right">As vagas estão completas</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Encaixotador <span class="float-right">As vagas estão completas</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Atendentes<span class="float-right">De 5 vagas faltam 1</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Supervisor<span class="float-right">As vagas estão completas</span></h4>
-                  <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                  <div class="tab-pane fade show active" id="dezesseis" role="tabpanel" aria-labelledby="nav-dezesseis">
 
-            <div class="col-lg-6 mb-6">
-             <div class="row">
-            <div class="col-sm-12">
-              <div class="card">
-                <div class="card-body">
-                  <center><h5 class="card-title">Agendar Entrevista  </h5> </center>
-
-                   
-                  <br>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="">Vaga:</span>
-                      </div>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Encaixotador</option>
-                        <option>Supervisor</option>
-                        <option>Atendente</option>
-                        <option> Gerente</option>
-                        <option>Planfetagem</option>
-                      </select>
-                    </div>
+                    <h4 class="text-left">Vaga desejada: Encaixotador</h4>
                     <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="">Candidato:</span>
-                    </div>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>Jorge da Silva</option>
-                      <option>João Marcos</option>
-                    </select>
+                    <h4 class="text-left">Tempo de experiência: 3 anos </h4>
+                    <br>
+                    <h4 class="text-left"> Telefone de Contato: 3231-0007<h4/>
+                    <br>
+                    <h4 class="text-left">Email: Joreg@outlook.com<h4/>
+                    <br>
+                    <h4 class="text-left">CPF: 021-321-265-83<h4/> 
                   </div>
-                  <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="">Data:</span>
-                    </div>
-                    <input type="date">
-                  </div>
-                  <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="">Hora:</span>
-                    </div>
-                    <input type="time">
-                  </div>
-                  <br>
-                  <a href="#" class="btn btn-primary">Agendar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <center><h6 class="m-0 font-weight-bold text-primary">Agendamentos</h6></center>
-                </div>
-
-                <div class="card-body">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-sm">
-                          <div class=" font-weight-bold text-success text-uppercase mb-1">
-                          <center><h5>Confirmados</h5>
-                          <h1 class="float-none">5 <i class="fas fa-check-circle"></i></h1></center></div>
+                  <div  class="card-footer">
+                    <h2 class="text-center">Agendar Entrevista</h2>
+                    <br>
+                    <form class="col-lg-8 offset-lg-4 ">
+                      <div class="row justify-content-center">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text" id="">Data:</span>
+                          </div>
+                          <input type="date">
                         </div>
-                        <div class="col-sm">
-                          <div class=" font-weight-bold text-warning text-uppercase mb-1">
-                            <center><h5>Aguardando</h5>
-                            <h1 class="float-none">3 <i class="fas fa-spinner fa-pulse"></i></h1></center>
-                          </div>  
+                        <br>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text" id="">Hora:</span>
+                          </div>
+                          <input type="time">
                         </div>
                       </div>
-                    </div>
-                   
-                  
+                    </form>
+                    <br>
+                  <center><button type="button" class="btn btn-success btn-lg">Agendar</button></center>
+                  </div>
                 </div>
-              </div>
-
-            </div>
-          </div> 
-
+          </div>
         </div>
-        
+        <!-- /.container-fluid -->
 
       </div>
-      
+      <!-- End of Main Content -->
 
       <!-- Footer -->
-      <footer class="sticky-footer bg-white" style="padding: 3% !important;">
+      <footer class="sticky-footer bg-white">
         <div class="container my-auto" style="padding: 3% !important;">
           <div class="copyright text-center my-auto">
             <span>Copyright &copy; Banco de Currículos 2019</span>
@@ -402,7 +290,7 @@
   </a>
 
   <!-- Logout Modal-->
- <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -430,8 +318,6 @@
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
-
 </body>
-
 
 </html>
